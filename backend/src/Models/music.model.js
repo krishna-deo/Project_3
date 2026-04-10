@@ -4,7 +4,7 @@ const musicSchema = new mongoose.Schema({
         type: String,
         reuired: true,
     },
-    titles: {
+    title: {
         type: String,
         required: true,
     },
@@ -16,3 +16,5 @@ const musicSchema = new mongoose.Schema({
 })
 
 const musicModel = mongoose.model("music", musicSchema)
+
+module.exports=musicModel
